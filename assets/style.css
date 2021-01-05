@@ -1,0 +1,404 @@
+@import url('http://fonts.googleapis.com/css?family=Open+Sans:400,700');
+
+*{
+	padding:0;
+	margin:5;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+}
+
+
+
+ /* Create a sticky/fixed navbar */
+ #navbar {
+	overflow: hidden;
+	background-color: white;
+	padding: 90px 10px; /* Large padding which will shrink on scroll (using JS) */
+	position: relative;
+	width: 100%;
+	max-height: 100px;
+	top: 0;
+	z-index: 99;
+  }
+  
+  /* Style the navbar links */
+  #navbar a {
+	float: left;
+	color: black;
+	text-align: center;
+	padding: 12px;
+	text-decoration: none;
+	font-size: 18px;
+	line-height: 25px;
+	border-radius: 4px;
+  }
+  
+  /* Style the logo */
+  #navbar #logo {
+	font-size: 35px;
+	font-weight: bold;
+	transition: 0.4s;
+  }
+  
+  /* Links on mouse-over */
+  #navbar a:hover {
+	background-color: #ddd;
+	color: black;
+  }
+  
+  /* Style the active/current link */
+  #navbar a.active {
+	background-color: dodgerblue;
+	color: white;
+  }
+  
+  /* Display some links to the right */
+  #navbar-right {
+	float: right;
+  }
+  
+  /* Add responsiveness - on screens less than 580px wide, display the navbar vertically instead of horizontally */
+  @media screen and (max-width: 580px) {
+	#navbar {
+	  padding: 20px 10px !important; /* Use !important to make sure that JavaScript doesn't override the padding on small screens */
+	}
+	#navbar a {
+	  float: none;
+	  display: block;
+	  text-align: left;
+	}
+	#navbar-right {
+	  float: none;
+	}
+  }
+
+.booking-form-box
+{
+	max-width: 500px;
+	border : 5px solid #ced4da;
+	margin: 10% auto 0;
+	border-radius: 5px;
+}
+
+.radio-btn
+{
+	margin: 0 20px;
+
+}
+
+.radio-btn .btn
+{
+	margin: 20px 10px 20px 0;
+	box-shadow: none;
+
+}
+
+.radio-btn .btn::after
+{
+	content:'';
+	height: 15px;
+	width: 15px;
+	top: -2px;
+	left: -1px;
+	background-color: #fff;
+	position: realtive;
+	display: inline-block;
+	border: 3px solid black;
+	visibility: visible;
+	border-radius: 50%;
+}
+
+.radio-btn .btn:checked::after
+{
+	content:'';
+	background-color: blueviolet;
+	transition: 0.5s;
+
+}
+
+.radio-btn span
+{
+	color : black;
+	margin-right: 5px;
+	font-size: 12px;
+}
+
+.booking-form
+{
+	padding: 0 20px 20px;
+
+}
+
+.booking-form label
+{
+	margin-bottom: 5px;
+	margin-top: 10px;
+	font-size: 12px;
+	color: black;
+
+
+}
+
+input::placeholder
+{
+	color: black  !important;
+
+}
+
+.input-grp
+{
+	width: 151px;
+	display: inline-block;
+
+}
+
+.form-control
+{
+	font-size: 12px;
+	border-radius: 10;
+	color: black;
+	background: dimgrey;
+	box-shadow: 5px 5px #888888;
+
+}
+
+.select-date::-webkit-inner-spin-button,
+.select-date::-webkit-outer-spin-button
+{
+	margin: 0;
+}
+
+.select-date::webkit-calendar-picker-indicator
+{
+	background: dimgrey;
+
+}
+
+.custom-select
+{
+	color: black;
+	font-size: 12px;
+	border: 1px solid black;
+	box-shadow: 5px 5px #888888;
+	border-radius: 5;
+}
+
+.custom-select option
+{
+	color: #333;
+
+}
+
+.flight
+{
+	width : 100%;
+	padding: 9px 0;
+	font-size: 12px;
+	border: 1px solid black;
+	border-radius: 5;
+}
+
+.flight:hover
+{
+	background: #888888!important;
+	color: white!important;
+	transition: 0.5s;
+
+
+}
+
+w3-row-padding w3-padding-16{
+	width : 30%;
+	height : 200px;
+	border : 5px dashed black;
+}
+
+
+
+img {
+	height: 100%;
+	width: 100%;
+}
+
+
+
+footer{
+	position: relative;
+	bottom: 0;
+}
+
+@media (max-height:800px){
+	footer { position: static; }
+	header { padding-top:40px; }
+}
+
+
+.footer-distributed{
+	background-color: white;
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	font: bold 16px sans-serif;
+	padding: 50px 50px 60px 50px;
+	margin-top: 80px;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+	display: inline-block;
+	vertical-align: top;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left{
+	width: 30%;
+}
+
+.footer-distributed h3{
+	color: black;
+	font: normal 36px 'Cookie', cursive;
+	margin: 0;
+}
+
+
+
+.footer-distributed .footer-left img{
+	width: 30%;
+}
+
+.footer-distributed h3 span{
+	color:  #e0ac1c;
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links{
+	color: black;
+	margin: 20px 0 12px;
+}
+
+.footer-distributed .footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+	text-decoration: none;
+	color:  inherit;
+}
+
+.footer-distributed .footer-company-name{
+	color:  #8f9296;
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+}
+
+/* Footer Center */
+
+.footer-distributed .footer-center{
+	width: 35%;
+}
+
+
+.footer-distributed .footer-center i{
+	background-color:  white;
+	color: black;
+	font-size: 25px;
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 42px;
+	margin: 10px 15px;
+	vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope{
+	font-size: 17px;
+	line-height: 38px;
+	background-color:  white;
+
+}
+
+.footer-distributed .footer-center p{
+	display: inline-block;
+	color: black;
+	vertical-align: middle;
+	margin:0;
+}
+
+.footer-distributed .footer-center p span{
+	display:block;
+	font-weight: normal;
+	font-size:14px;
+	line-height:2;
+}
+
+.footer-distributed .footer-center p a{
+	color:  #e0ac1c;
+	text-decoration: none;;
+}
+
+
+/* Footer Right */
+
+.footer-distributed .footer-right{
+	width: 30%;
+}
+
+.footer-distributed .footer-company-about{
+	line-height: 20px;
+	color:  #92999f;
+	font-size: 13px;
+	font-weight: normal;
+	margin: 0;
+}
+
+.footer-distributed .footer-company-about span{
+	display: block;
+	color:  black;
+	font-size: 18px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons{
+	margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	background-color:  white;
+	border-radius: 2px;
+
+	font-size: 20px;
+	color: black;
+	text-align: center;
+	line-height: 35px;
+
+	margin-right: 3px;
+	margin-bottom: 5px;
+}
+
+
+
+@media (max-width: 880px) {
+
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-center,
+	.footer-distributed .footer-right{
+		display: block;
+		width: 100%;
+		margin-bottom: 40px;
+		text-align: center;
+	}
+
+	.footer-distributed .footer-center i{
+		margin-left: 0;
+	}
+
+}
